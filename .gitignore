@@ -1,10 +1,10 @@
 # dependencies
-/node_modules
+menu-client/node_modules
 /.pnp
 .pnp.js
 bower_components/
-bin/
-obj/
+menu_server/bin/
+menu_server/obj/
 
 # testing
 /coverage
