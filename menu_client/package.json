@@ -1,5 +1,5 @@
 {
-  "name": "menu-client",
+  "name": "menu_client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
