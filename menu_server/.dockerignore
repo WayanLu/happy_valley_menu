@@ -1,0 +1,21 @@
+# Build artifacts
+bin
+obj
+
+# User-specific files
+*.user
+*.suo
+
+# Logs
+*.log
+
+# VS Code settings
+.vscode
+
+# Git-related
+.git
+.gitignore
+
+# Misc
+.DS_Store
+.env
