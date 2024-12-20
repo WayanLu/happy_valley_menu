@@ -9,7 +9,7 @@ services:
       #- ./menu_server:/app
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-    command: dotnet watch run # hot reload
+    #command: dotnet watch run # hot reload
     networks:
       - app_network
 
