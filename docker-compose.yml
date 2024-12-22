@@ -5,7 +5,7 @@ services:
       context: ./menu_server
       dockerfile: Dockerfile
     ports:
-      - "5000:5000"
+      - "8080:5000"
     #volumes:
       #- ./menu_server:/app  # Relative path to the menu_server directory
       #- /app/bin  # Exclude bin folder

@@ -19,7 +19,7 @@ WORKDIR /app
 COPY --from=build /app/out ./
 
 # Expose the port the app runs on
-EXPOSE 8080
+EXPOSE 5000
 
 # Run the app
 ENTRYPOINT ["dotnet", "menu_server.dll"]
