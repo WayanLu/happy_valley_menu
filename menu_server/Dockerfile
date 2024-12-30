@@ -11,15 +11,17 @@ COPY . ./
 RUN dotnet publish -c Release -o out
 
 # After publishing, check output directory
-RUN ls -la out
+RUN ls -la /app
+RUN ls -la /app/out
 
 # Use the official ASP.NET runtime image to run the app
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
-COPY --from=build /app/out ./
+COPY --from=build /app/out /app/
 
 # Expose the port the app runs on
 EXPOSE 5000
 
 # Run the app
+WORKDIR /app
 ENTRYPOINT ["dotnet", "menu_server.dll"]
