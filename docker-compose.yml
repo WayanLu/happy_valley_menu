@@ -5,11 +5,14 @@ services:
       context: ./menu_server
       dockerfile: Dockerfile
     ports:
-      - "8080:5000"
+      - "5066:5066"
     volumes:
       - ./menu_server:/app
+      - /app/bin
+      - /app/obj
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5066
     #command: dotnet watch run # hot reload
     networks:
       - app_network
